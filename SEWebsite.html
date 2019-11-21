@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="home.css" />
     <!-- <script type="text/javascript" src="radiobuttons.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -11,16 +12,33 @@
         <a class="active" href="#home">Home</a>
         <a class="active" href="#archive">Archive</a><br>
     </div class="container">
-    <fieldset>
-        <input id="button" type="radio" onchange="viewOfHomepage()" name="Button" value="Day" checked /> Day<br />
-        <input id="button" type="radio" onchange="viewOfHomepage()" name="Button" value="Week" /> Week<br />
-        <input id="button" type="radio" onchange="viewOfHomepage()" name="Button" value="Month" /> Month
-    </fieldset>
+    <form id='radiobuttons'>
+        <input id="daybutton" type="radio" onchange="viewOfHomepage()" name="Button" value="Day" /> Day<br />
+        <input id="weekbutton" type="radio" onchange="viewOfHomepage()" name="Button" value="Week" /> Week<br />
+        <input id="monthbutton" type="radio" onchange="viewOfHomepage()" name="Button" value="Month" /> Month
+    </form>
+    <script>
+        $('#radiobuttons').change(
+            function(){
+                if($('#daybutton').attr('checked')){
+                    //display the day calendar
+                    $('#daycalendar').show();
+                }
+                else if($('#weekbutton').attr('checked')){
+                    //show week calendar
+                    $('#weekcalendar').show();
+                }
+                else {
+                    //show month calendar
+                    $('#monthcalendar').show();
+                }
+            }
+        )
+    </script>
+
+
     <div>
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQj9nKYAJ3LCGk436gXHYnUhEwzNCDqr0KxIUPzCB95H8SL7fbkfw7uDo5_sMg_grm9V98B4YJjy7ex/pub?output=csv"></iframe>
-    </div>
-    <div>
-        <div id="day">
+        <div id="daycalendar" style="display:none">
             <table style="width:100%">
                 <tr>
                     <th>Sunday</th>
@@ -30,8 +48,10 @@
                     <th>other event today</th>
                 </tr>
             </table>
+
+
         </div>
-        <div id="week" style="display:none">
+        <div id="weekcalendar" style="display:none">
             <table style="width:100%">
                 <tr>
                     <th>Import the Month here</th>
@@ -55,6 +75,10 @@
                     <td>7</td>
                 </tr>
             </table>
+        </div>
+
+        <div id='monthcalendar' style="display:none">
+            <p>This will be the month calendar section.</p>
         </div>
 
 </body>
