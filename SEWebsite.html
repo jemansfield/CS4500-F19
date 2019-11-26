@@ -12,28 +12,29 @@
         <a class="active" href="#home">Home</a>
         <a class="active" href="#archive">Archive</a><br>
     </div class="container">
-    <form id='radiobuttons'>
-        <input id="daybutton" type="radio" onchange="viewOfHomepage()" name="Button" value="Day" /> Day<br />
-        <input id="weekbutton" type="radio" onchange="viewOfHomepage()" name="Button" value="Week" /> Week<br />
-        <input id="monthbutton" type="radio" onchange="viewOfHomepage()" name="Button" value="Month" /> Month
-    </form>
+
+        <input id="daybutton" type="radio" name="Button" value="Day" /> Day<br />
+        <input id="weekbutton" type="radio" name="Button" value="Week" /> Week<br />
+        <input id="monthbutton" type="radio" name="Button" value="Month" /> Month
+
     <script>
-        $('#radiobuttons').change(
-            function(){
-                if($('#daybutton').attr('checked')){
-                    //display the day calendar
-                    $('#daycalendar').show();
-                }
-                else if($('#weekbutton').attr('checked')){
-                    //show week calendar
-                    $('#weekcalendar').show();
-                }
-                else {
-                    //show month calendar
-                    $('#monthcalendar').show();
-                }
-            }
-        )
+        $("#daybutton").click(function () {
+	$('#daycalendar').show();
+	$('#weekcalendar').hide();
+	$('#monthcalendar').hide();
+});
+
+$("#weekbutton").click(function () {
+	$('#daycalendar').hide();
+	$('#weekcalendar').show();
+	$('#monthcalendar').hide();
+});
+
+$("#monthbutton").click(function () {
+	$('#daycalendar').hide();
+	$('#weekcalendar').hide();
+	$('#monthcalendar').show();
+});
     </script>
 
 
