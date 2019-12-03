@@ -4,20 +4,25 @@
 
 <head>
     <link href="css/home.css" rel="stylesheet" type="text/css" />
-    <!-- <link rel="import" href="day.html"> -->
+    <title>CS4500 Final</title>
 </head>
 
 <body>
     <div class="topnav">
-        <a class="active" href="#">Home</a>
-        <a class="active" href="archive/archive.html">Archive</a><br>
+        <a class="active" href="../index.html">Home</a>
+        <a class="active" href="#">Archive</a><br>
     </div class="container">
 	
-    <form id='radiobuttons'>
+    <!-- <form id='radiobuttons'>
+        view of homepage
         <input id="daybutton" type="radio" onchange="" name="Button" value="Day" /> Day <br/>
         <input id="weekbutton" type="radio" onchange="" name="Button" value="Week" /> Week<br/>
         <input id="monthbutton" type="radio" onchange="" name="Button" value="Month" /> Month <br/>
-    </form>
+    </form> -->
+	
+    <script>
+        
+    </script>
 
     <div>
         <div id="daycalendar" style="display:none">
@@ -25,21 +30,10 @@
                 <tr>
                     <th>Sunday</th>
                 </tr>
-				<tr>
-                    <td>Study Tables</td>
-                    <td>5:30 - 7:30 McMillen Library</td>
-                </tr>
+				
                 <tr>
-                    <td>Alone in the Game - Film and Discussion</td>
-                    <td>7:00 - 9:00 PM Magee O' Connor Theatre</td>
-                </tr>
-                <tr>
-                    <td>Casino Night</td>
-                    <td>6:00 - 9:00 PM Multi Flex Thearte </td>
-                </tr>
-                <tr>
-                    <td>Warriors vs. Aquinas</td>
-                    <td>8:00 PM Schafer Center</td>
+                    <th>events today</th>
+                    <th>other event today</th>
                 </tr>
             </table>
         </div>
@@ -71,6 +65,7 @@
         </div>
 
         <div id='monthcalendar' style="display:none">
+			<!--<iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FIndiana%2FIndianapolis" style="border: 0" width="400" height="400" frameborder="0" scrolling="no"></iframe>-->
             <p>This will be the month calendar section.</p>
         </div>
 	</div>
