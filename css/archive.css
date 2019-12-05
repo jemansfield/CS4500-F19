@@ -1,0 +1,55 @@
+body {
+  background-image: url(../images/christmas-dark.png);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+* {box-sizing: border-box;}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+    
+  .topnav {
+      overflow: hidden;
+      background-color: #333;
+      font: "Roboto Condensed";
+  }
+  
+  .topnav a {
+      float: left;
+      color: #CBCBCB;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  
+  .topnav a:hover {
+      background-color: #CBCBCB;
+      color: black;
+  }
+  
+  .topnav a.active {
+      background-color: #fa4616;
+      color: white;
+  }
