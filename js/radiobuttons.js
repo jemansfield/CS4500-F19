@@ -1,3 +1,5 @@
+$('#daycalendar').show();
+
 $("#daybutton").click(function () {
 	console.log("Day");
 	$('#daycalendar').show();
