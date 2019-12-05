@@ -4,6 +4,7 @@
 
 <head>
     <link href="/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="/css/archive.css" rel="stylesheet" type="text/css" />
     <title>CS4500 Final</title>
 </head>
 
@@ -13,18 +14,48 @@
         <a class="active" href="#">Archive</a><br>
     </div class="container">
 	
-    <!-- <form id='radiobuttons'>
-        view of homepage
-        <input id="daybutton" type="radio" onchange="" name="Button" value="Day" /> Day <br/>
-        <input id="weekbutton" type="radio" onchange="" name="Button" value="Week" /> Week<br/>
-        <input id="monthbutton" type="radio" onchange="" name="Button" value="Month" /> Month <br/>
-    </form> -->
+    <h1>Archive Page</h1>
+    <br>
+    <h3>Click below to expand the sections to view past events</h3>
+
+    <button class="accordion">Spring 2019 Events</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+    <button class="accordion">Fall 2019 Events</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+    <button class="accordion">Fall 2018 Events</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+    <button class="accordion">Spring 2018 Events</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
 	
     <script>
-        
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+     });
+    }    
     </script>
 
-    <div>
+    <!-- <div>
         <div id="daycalendar" style="display:none">
             <table style="width:100%">
                 <tr>
@@ -65,10 +96,10 @@
         </div>
 
         <div id='monthcalendar' style="display:none">
-			<!--<iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FIndiana%2FIndianapolis" style="border: 0" width="400" height="400" frameborder="0" scrolling="no"></iframe>-->
+		
             <p>This will be the month calendar section.</p>
         </div>
-	</div>
+	</div> -->
 	
 	<!--scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
