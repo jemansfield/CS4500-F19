@@ -1,5 +1,11 @@
 body {
-    background-image: url(../images/hex.png);
+    background-image: url(../images/christmas-dark.png);
+}
+
+#background {
+    /*background-image: url(../images/christmas-dark.png);*/
+    width: 100%;
+    height: auto;
 }
 
 #radiobuttons {
@@ -34,7 +40,7 @@ body {
 
 .container {
     font: "Roboto Condensed";
-    padding: 14px 14px;
+    /*padding: 14px 14px;*/
 }
 
 #daycalendar {
@@ -66,16 +72,25 @@ body {
 
 div td {
     color: #fa4616;
-    background-color: #494949;
+    background-color: black;
     font-weight: 600;
     width: fit-content;
     width: 10%;
     height: 30px;
 }
-    
-#background {
-    background-image: url(../images/prism.jpg);
-    width: 100%;
-    height: auto;
+
+div th {
+    color: #fa4616;
+    background-color: black;
+    font-weight: 600;
+    width: fit-content;
+    width: 10%;
+    height: 30px;
 }
+
+table ,th, td {
+    border: 1px solid #494949;
+}
+    
+
 
