@@ -1,0 +1,81 @@
+body {
+    background-image: url(../images/hex.png);
+}
+
+#radiobuttons {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    font: "Roboto Condensed";
+}
+
+.topnav a {
+    float: left;
+    color: #494949;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #fa4616;
+    color: white;
+}
+
+.container {
+    font: "Roboto Condensed";
+    padding: 14px 14px;
+}
+
+#daycalendar {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: baseline;
+    padding-bottom: 30px;
+}
+
+#weekcalendar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    vertical-align: baseline;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+}
+
+#monthcalendar {
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    vertical-align: baseline;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+}
+
+div td {
+    color: #fa4616;
+    background-color: #494949;
+    font-weight: 600;
+    width: fit-content;
+    width: 10%;
+    height: 30px;
+}
+    
+#background {
+    background-image: url(../images/prism.jpg);
+    width: 100%;
+    height: auto;
+}
+
