@@ -77,7 +77,7 @@ div td {
     background-color: black;
     font-weight: 600;
     width: fit-content;
-    width: 90%;
+    width: 10%;
     height: 30px;
 }
 
@@ -94,7 +94,18 @@ table ,th, td {
     border: 1px solid #494949;
 }
     
-/*.month {
+.month {
     font-size: 25px;   
-}*/
+}
 
+.message {
+    font-size: 40px;
+    color: #fa4616;
+    font-family: 'muli',sans-serif;
+    font-weight: 600;
+}
+
+.logo {
+    text-align: center;
+    display: block;
+}
