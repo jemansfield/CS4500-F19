@@ -1,5 +1,7 @@
 body {
     background-image: url(../images/christmas-dark.png);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #background {

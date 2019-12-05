@@ -1,5 +1,7 @@
 body {
   background-image: url(../images/christmas-dark.png);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 * {box-sizing: border-box;}
 
@@ -26,12 +28,7 @@ body {
     background-color: white;
     overflow: hidden;
   }
-  
-  body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
+    
   .topnav {
       overflow: hidden;
       background-color: #333;
